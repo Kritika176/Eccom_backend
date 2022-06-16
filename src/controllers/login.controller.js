@@ -6,7 +6,7 @@ const express = require("express");
 const router = express.Router();
 const User = require("../models/user.model");
 var newToken = (user) => {
-    return jwt.sign({ user }, process.env.JWT_SECRET_KEY);
+    return jwt.sign({ user }, "kritika176");
   };
 
   router.post("",async (req, res) => {
