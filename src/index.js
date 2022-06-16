@@ -17,7 +17,7 @@ app.use("/products",productController);
 app.use("/cart",cartController);
 const connect = async() => {
     try{
-        mongoose.connect("mongodb+srv://kritika176:kritika176@cluster0.7rdip.mongodb.net/Eccom")
+        mongoose.connect("mongodb+srv://kritika123:kritika123@cluster0.mmpdvfj.mongodb.net/?retryWrites=true&w=majority")
     }
     catch(err){
         console.log(err.message)
