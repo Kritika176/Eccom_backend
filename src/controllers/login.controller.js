@@ -8,8 +8,7 @@ const User = require("../models/user.model");
 var newToken = (user) => {
     return jwt.sign({ user }, "kritika176");
   };
-
-  router.post("",async (req, res) => {
+ router.post("",async (req, res) => {
     try {
       const user = await User.findOne({ email: req.body.email });
           
